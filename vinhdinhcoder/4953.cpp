@@ -9,10 +9,10 @@ typedef pair<int, int> ii;
 
 // ENTER YOUR CODE
 
-char arr[501][501], isNotVisit[501][501];
-int n, m;
+char arr[501][501];
+bool isNotVisit[501][501];
+int n, m, moveX[4] = {0, 0, -1, 1}, moveY[4] = {-1, 1, 0, 0};
 ii st;
-int moveX[4] = {0, 0, -1, 1}, moveY[4] = {-1, 1, 0, 0};
 
 bool isValid(int i, int j) {
   return arr[i][j] != 'x' && i >= 0 && i < n && j >= 0 && j < m;
