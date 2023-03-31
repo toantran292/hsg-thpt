@@ -7,7 +7,7 @@ using namespace std;
 typedef int64_t int64;
 typedef pair<int, int> ii;
 
-bool cmp(const ii a, const ii b) { return a.second < b.second; }
+bool cmp(const ii a, const ii b) { return a.second > b.second; }
 
 int main() {
   ios::sync_with_stdio(false);
@@ -23,7 +23,7 @@ int main() {
   }
 
   vector<ii> tb(hash.begin(), hash.end());
-  sort(tb.begin(), tb.end());
+  sort(tb.begin(), tb.end(), cmp);
   int64 ans = 0;
   REP(i, 0, SZ(tb)) {
     if (k == 0) break;

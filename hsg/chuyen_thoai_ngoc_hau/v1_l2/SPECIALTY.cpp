@@ -7,7 +7,7 @@ using namespace std;
 typedef int64_t int64;
 typedef pair<int, int> ii;
 
-const int64 N_MAX = 101, ANS_MAX = 1e15;
+const int64 N_MAX = 101, ANS_MAX = 2e15;
 pair<int64, int64> a[N_MAX];
 int64 n, m, ans = -1;
 
